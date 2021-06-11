@@ -36,12 +36,9 @@ window.columnconfigure(0 , weight= 1)
 window.columnconfigure(1 , weight= 1)
 window.columnconfigure(2 , weight= 1)
 window.columnconfigure(3 , weight= 1)
-lab = Label(window,text= "0",
-                    justify="right",
+lab = Label(window,text= "0",justify="right",
                     anchor="c",#文字的位置
-                    font=("Monaco",26,"bold"),
-                    background="#ccddff",
-                    foreground="#000000")
+                    font=("Monaco",26,"bold"),background="#ccddff")
 lab.grid(row=0, column=0 , columnspan=3, sticky=EW)
 
 But1= Button(window, text="7" , font=("Monaco",36,"bold"), command=lambda:setText("7"))#lambda匿名函式
