@@ -18,6 +18,12 @@ def com():
     global OP
     if OP == 1:
         lab["text"] = Y+Y2
+    elif OP == 2:
+        lab["text"] = Y- Y2
+    elif OP == 3:
+        lab["text"] = Y * Y2
+    elif OP == 4:
+        lab["text"] = Y/Y2
 
 window = Tk()
 window.title= "0611 class2 Digital keyboard"
@@ -54,7 +60,7 @@ But5.grid(row= 2 , column= 1 , sticky=NSEW)
 But6= Button(window, text="6", font=("Monaco",36,"bold"), command=lambda:setText("6"))
 But6.grid(row= 2 , column= 2 , sticky=NSEW)
 Buttr= Button(window, text="/", font=("Monaco",36,"bold"), command=lambda:OPset("/"))
-But6.grid(row= 2 , column= 3 , sticky=NSEW)
+Buttr.grid(row= 2 , column= 3 , sticky=NSEW)
 
 But7= Button(window, text="1" , font=("Monaco",36,"bold"), command=lambda:setText("1"))#lambda匿名函式
 But7.grid(row= 3 , column= 0 , sticky=NSEW)#grid照座標擺放位置
